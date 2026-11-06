@@ -1,91 +1,102 @@
 ```css
-/* TAMPILAN UTAMA */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #fff8ed;
+    background: #fff8ed;
     color: #333;
 }
 
 /* NAVBAR */
 header {
-    background: #a91d1d;
+    background: #a71919;
     color: white;
-    padding: 20px 8%;
+    padding: 20px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h2 {
+    color: #ffd05a;
     font-size: 28px;
-    font-weight: bold;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 20px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #ffc107;
+    color: #ffd05a;
 }
 
-/* HALAMAN DEPAN */
+/* HERO */
 .hero {
-    background: linear-gradient(
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0.2)
-    ), #f6b94a;
-    padding: 120px 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 8%;
+    gap: 30px;
+    background: #ffd27f;
+}
+
+.hero-text h3 {
+    color: #8b0000;
 }
 
 .hero h1 {
-    font-size: 48px;
-    color: #8b0000;
-    margin-bottom: 20px;
+    font-size: 65px;
+    color: #b22222;
+    margin: 15px 0;
 }
 
 .hero p {
-    font-size: 19px;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 
-/* TOMBOL */
+.hero img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+/* BUTTON */
 button {
-    background: #a91d1d;
+    background: #b22222;
     color: white;
-    padding: 15px 35px;
+    padding: 15px 30px;
     border: none;
     border-radius: 30px;
-    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 16px;
 }
 
 button:hover {
     background: #700000;
-    transform: scale(1.05);
 }
 
-/* DAFTAR MENU */
+/* MENU */
 .menu {
-    padding: 70px 20px;
+    padding: 60px 7%;
     text-align: center;
 }
 
 .menu h2 {
-    color: #a91d1d;
-    font-size: 35px;
-    margin-bottom: 40px;
+    color: #a71919;
+    font-size: 32px;
+    margin-bottom: 35px;
 }
 
 .menu-container {
@@ -97,4 +108,108 @@ button:hover {
 
 .card {
     background: white;
-    width: 260
+    width: 280px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ddd;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #b22222;
+    margin: 15px;
+}
+
+.card p {
+    margin-bottom: 12px;
+}
+
+.card h4 {
+    color: #e68a00;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+    background: #ffe1b0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #a71919;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about h3 {
+    color: #b22222;
+    margin-top: 20px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #a71919;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #a71919;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 7px;
+        display: inline-block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+```
