@@ -1,0 +1,191 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIE ASOK - Mie Lezat</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+       background: #fff8ee;
+            color: #333;
+        }
+
+        header {
+            background: #b22222;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #ffd27f;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            color: #9b1c1c;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #b22222;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #7d1515;
+        }
+
+        .menu {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .menu h2 {
+            margin-bottom: 30px;
+            color: #b22222;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 230px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .card h3 {
+            color: #b22222;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background: #ffe5bd;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        footer {
+            background: #b22222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>🍜 MIE ASOK</h2>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Tentang</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Selamat Datang di MIE ASOK</h1>
+        <p>Nikmati kelezatan mie dengan cita rasa yang bikin ketagihan!</p>
+        <button onclick="pesan()">Pesan Sekarang</button>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Menu MIE ASOK</h2>
+
+        <div class="menu-container">
+
+            <div class="card">
+                <h3>Mie Goreng</h3>
+                <p>Mie goreng dengan bumbu spesial.</p>
+                <h4>Rp12.000</h4>
+            </div>
+
+            <div class="card">
+                <h3>Mie Kuah</h3>
+                <p>Mie kuah hangat dan nikmat.</p>
+                <h4>Rp12.000</h4>
+            </div>
+
+            <div class="card">
+                <h3>Mie Pedas</h3>
+                <p>Mie dengan sensasi pedas.</p>
+                <h4>Rp15.000</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Tentang MIE ASOK</h2>
+        <p>
+            MIE ASOK adalah tempat kuliner yang menyediakan
+            berbagai macam olahan mie dengan rasa lezat,
+            harga terjangkau, dan kualitas terbaik.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MIE ASOK. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function pesan() {
+            alert("Terima kasih sudah memilih MIE ASOK!");
+        }
+    </script>
+
+</body>
+</html>
+```
